@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add product</title>
+    <link  rel="stylesheet"  href="addproduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    
+        header {
+            width: 100%;
+            height: 60px;
+            background-color: orange;
+            border-bottom: 2px solid black;
+        }
+    
+        .gov {
+            display: flex;
+            background-image: url('government-of-india.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 50px;
+            height: 50px;
+            margin: 5px 5px;
+            margin-left: 3px;
+    
+        }
+    
+        .modi {
+            display: flex;
+            background-image: url("modi.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 50px;
+            margin: 5px 20px;
+        }
+    
+        nav {
+            display: flex;
+        }
+    
+        nav ul {
+            height: 60px;
+            display: flex;
+        }
+    
+        nav ul li {
+            padding: 0px 10px;
+            margin-left: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        nav ul li a {
+            text-decoration: none;
+            color: beige;
+        }
+    </style>
+    
+    <body>
+        <header>
+    
+            <nav>
+                <div class="gov"></div>
+                <div class="modi"></div>
+                <div class="options">
+                    <ul>
+                        <li><a href="inventory.html">Inventory</a></li>
+                        <li><a href="orders.html">Orders</a></li>
+                        <li><a href="performance.html">Performance</a></li>
+                        <li><a href="recommendations.html">Recommendations</a></li>
+                        <li><a href="payments.html">Payments</a></li>
+                        <li><a href="ssp.html">Seller Support</a></li>
+                        <li><a href="stats.html">Stats</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+    <h1>Product Information:</h1>
+    <hr style="height:5px; background-color:black; box-shadow: 5rem;">
+    <div class="product-fill">
+       
+            
+            <li><div class="list2">
+                <form action="#" name="productsubmit" autocomplete="on" >
+                <label for="cars" class="para-fit"> Industry </label>
+                <select name="industry" id="industry">
+                  
+                    <option value="Food industry">Food industry</option>
+                    <option value="Textile And Fashion">Textile And Fashion</option>
+                 
+                    <option value="Jewellery">Jewellery</option>
+                    <option value="ayurvedic/herbs">ayurvedic/herbs</option>
+                    <option value="Agro industry">Agro industry</option>
+                    <option value="Medical Phama">Medical Phama</option>
+                 
+                    <option value="Hardware">Hardware</option>
+                    <option value="Electronic/Electrical">Electronic/Electrical</option>
+                  
+                </select></div>
+            </li><br>
+            
+            
+            <br>
+            
+            <li><div class="list2">
+                <label for="cars" class="para-fit">Sub Category</label>
+                <select name="industry" id="industry">
+                  
+                    <option value="volvo">Food industry</option>
+                    <option value="saab">Textile And Fashion</option>
+                 
+                    <option value="mercedes">Jewellery</option>
+                    <option value="audi">ayurvedic/herbs</option>
+                    <option value="volvo">Agro industry</option>
+                    <option value="saab">Medical Phama</option>
+                 
+                    <option value="mercedes">Hardware</option>
+                    <option value="audi">Electronic/Electrical</option>
+                  
+                </select></div>
+                </li><br>
+     
+                
+            <br>
+            
+               <li><div class="lis1"><p class="para-fit">Product Name  </p><input class="input-value"name="product name" type="text"></div> 
+               </li><br>
+                
+                <br>
+                <li><div class="lis1"><p class="para-fit">Description of Product </p>  <input name="product name"  class="input-value" type="text">
+                </div>    
+                </li><br>
+                
+                <br>
+                <li><div class="lis1"><p class="para-fit">Photos  </p> <input name="product name"  class="input-value" type="text">
+                </div> </li> <br>
+                
+                
+                <br>
+                <li><div class="list2">
+                    <label for="cars" class="para-fit">Quantity</label>
+                    <select  name="industry" class="parafit2" id="industry">
+                      
+                        <option value="volvo">Food industry</option>
+                        <option value="saab">Textile And Fashion</option>
+                     
+                        <option value="mercedes">Jewellery</option>
+                        <option value="audi">ayurvedic/herbs</option>
+                        <option value="volvo">Agro industry</option>
+                        <option value="saab">Medical Phama</option>
+                     
+                        <option value="mercedes">Hardware</option>
+                        <option value="audi">Electronic/Electrical</option>
+                      
+                    </select></div>
+                    </li><br>
+                    
+                    <br>
+                    <li><div class="list2">
+                        <label for="cars" class="para-fit">Customization available</label>
+                        <select name="industry" class="parafit2" id="industry">
+                          
+                            <option value="volvo">Food industry</option>
+                            <option value="saab">Textile And Fashion</option>
+                         
+                            <option value="mercedes">Jewellery</option>
+                            <option value="audi">ayurvedic/herbs</option>
+                            <option value="volvo">Agro industry</option>
+                            <option value="saab">Medical Phama</option>
+                         
+                            <option value="mercedes">Hardware</option>
+                            <option value="audi">Electronic/Electrical</option>
+                          
+                        </select></div>
+                        </li><br>
+                        
+                        <br>
+                        <h2 style="text-align: center;">Price  </h2><br>
+                        <br>
+                         <div class="price">
+
+                        <li><div class="lis1"><p class="para-fit">MRP </p> <input name="product name"  class="input-value" type="text">
+                        </div></li><br>
+                        <br>
+                        
+                        <li><div class="lis1"><p class="para-fit">Fixed Price  </p> <input name="product name"  class="input-value"  type="text">
+                        </div> </li>
+                    </div><br>
+                        
+                        <br>
+                    
+
+                        <h2 style="text-align: center;">Product Specification</h2>
+                        <br><div class="prdt-spcs">
+                        <li><div class="lis1"><p class="para-fit">Length </p>  <input name="product name"  class="input-value" type="text">
+                        </div></li><br>
+                        <br>
+                        
+                        <li><div class="lis1"><p class="para-fit">Breadth </p>  <input name="product name"   class="input-value" type="text">
+                        </div> </li><br>
+                        <br>
+                        
+                        <li><div class="lis1"><p class="para-fit">Height   </p> <input name="product name"  class="input-value" type="text">
+                        </div> </li><br>
+                        <br>
+                        
+                        <li><div class="lis1"><p class="para-fit">Colors   </p> <input name="product name"  class="input-value" type="text">
+                        </div></li>
+                    </div><br>
+                    
+                        
+                        <br>
+                        <li><div class="lis1"><p class="para-fit">Manufacturing Date </p>  <input name="product name" class="input-value" type="text">
+                        </div></li> <br>
+                        <br>
+                        
+                        <li><div class="lis1"><p class="para-fit">Date of Expiry </p> <input name="product name"  class="input-value" type="text">
+                        </div> </li>
+
+                <br><br><br>
+                <input class="button" type="submit" value="Submit">
+              </form>
+               
+                 
+        
+    </div>
+    
+</body>
+</html>
