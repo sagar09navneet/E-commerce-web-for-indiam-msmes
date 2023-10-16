@@ -6,6 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Montserrat:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="nav_bar">
@@ -276,4 +279,165 @@
 
     </div>
     </div>
-    </body>
+    <style>
+      /* Reset some default styles for the footer */
+  footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+  }
+  
+  /* Style the footer content */
+  .footer-content {
+      font-family: 'Libre Baskerville', serif;
+      
+      align-items: center;
+      height: 200px;
+      max-width: 100%; /* Adjust the max-width as needed */
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+  
+  .footer-logo img {
+      width: 100px;
+      height: auto;
+  }
+  
+  /* Add this CSS to your existing styles */
+  .footer-links ul{
+      display: flex; /* Use flexbox to display items horizontally */
+      justify-content: space-evenly; /* Distribute items evenly */
+  }
+  
+  .footer-links ul li {
+      list-style: none;
+  }
+  .footer-links li ul{
+      display: flex;
+      flex-direction: column;
+      border: 4px solid white;
+      padding: none;
+  }
+  
+  .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+      margin-right: 70px; /* Add some spacing between items */
+  }
+  .footer-links a:hover {
+      color: orange;
+  }
+  .footer-right-links li a{
+      color: #ff9900;
+      list-style: none;
+      margin-top: 20px;;
+      font-size:1rem;
+  }
+  /* Style the footer bottom text */
+  .footer-bottom {
+      background-color: #222;
+      padding: 10px 0;
+      font-size: 14px;
+  }
+  
+  .insta {
+      height: 25px;
+      width: 25px;
+      border-radius: 7px;
+      
+      font-size:1.5rem;
+  }
+  
+  .fb {
+      height: 25px;
+      width: 25px;
+      font-size: 1.5rem;
+  }
+  .footer-social{
+      padding-top: 30px;
+      padding-bottom: 0px;
+      display: flex ;
+      width:30%;
+      justify-content: space-evenly;
+      
+  }
+  .follow{
+      color:#fff;
+      width:5%;
+  
+  }
+  .footer-social li {
+      list-style: none;
+      margin-left: 20px;
+      margin-right: 5px;
+      width:20%;
+      
+      padding-top: 3px;
+  }
+  .footer-social ul{
+      display:flex;
+      text-align: center;
+      text-align:left;
+      margin-left:10px;
+  
+  }
+  
+  /* Add this CSS to align the new div to the right */
+  .footer-right-links ul{
+      color: whitesmoke;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top:0px;
+      
+  }
+  .footer-social ul li a img{
+      display: flex;
+  }
+  
+  </style>
+  
+      <!-- Your website content goes here -->
+  
+      <!-- Footer -->
+      <footer>
+          <div class="footer-content">
+              <div class="footer-logo">
+                  <img src="logo.png" alt="Company Logo">
+              </div>
+              <div class="footer-links">
+                  <ul>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Investor Relations</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Disclaimer</a></li>
+                  </ul>
+              </div>
+              <!-- New div for the right-hand links -->
+              
+              <div class="footer-social">
+                  <p class="follow">Follow Us:</p>
+                  <ul>
+                      <li><a href="#"><img class="fb" src="./facebook_733547.png" alt="Facebook"></a></li>
+                      <li><a href="#"><img class="insta" src="./twitter_icon.png" alt="Twitter"></a></li>
+                      <li><a href="#"><img class="insta" src="./Instagram_icon.png.webp" alt="Instagram"></a></li>
+                  </ul>
+              </div>
+              <div class="footer-right-links">
+                  <ul>
+                      <li><a href="#">Admin Login</a></li>
+                      <li><a href="#">Profile Login</a></li>
+                      <li><a href="#">Terms and Conditions</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              &copy; 2023 Dak Ghar Niryat Kendra. All Rights Reserved.
+          </div>
+      </footer>
+  
+  
+  </body>
+  </html>
+  

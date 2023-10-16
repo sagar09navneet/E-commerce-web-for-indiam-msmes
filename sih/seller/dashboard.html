@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="styleshseet" href="stylesheet.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        height: 60px;
+        background-color: orange;
+        border-bottom: 2px solid black;
+    }
+    .dashboard{
+        width:100%;
+        height:80px;
+        display:flex;
+    }
+
+    .navbar_logo{
+    height:100px;
+    width:250px;
+    display: flex;
+    align-items: center;
+    
+}
+.logo_1{
+    
+    margin-left: 2px;
+    height:80 px;
+    width:113 px;
+    
+}
+.logo_2{
+    margin-left:10px ;
+    background-image: url(G20.png);
+    height:70px;
+    width:130px;
+}
+.dashboard-cont{
+    font-size: xx-large;
+    font-weight: 400;
+    text-align: center;
+    margin-left:100px ;
+}
+
+    nav {
+        display: flex;
+    }
+
+    nav ul {
+        height: 60px;
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 0px 10px;
+        margin-left: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: beige;
+    }
+    footer{
+        width: 100%;
+        height: 60px;
+        background-color: orange;
+    }.box1{
+     background-color: orange;
+     width: 100%;
+     height: 200px;
+     border: 2px solid black;
+     display: flex;
+     
+    }.box2{
+        background-color:rgb(172, 180, 181) ;
+     width: 75vw;
+     height: 500px;
+     border: 2px solid black;
+     display: flex;
+     position: relative;
+     left: 25vw;
+     margin: 3px 3px;
+     top: 25px;
+    }
+    .box3{
+        background-color: rgb(172, 180, 181);
+     width:  25vw;;
+     height: 500px;
+     border-top: 2px solid black;
+     display: flex;
+     position: relative;
+     bottom: 512px;
+     margin: 3px 3px;
+    }
+    .box4{
+        background-color: rgb(172, 180, 181);
+     width: 75vw;
+     height: 200px;
+     border: 2px solid black;
+     display: flex;
+     position: relative;
+     bottom: 1192px;
+     left: 363px;
+
+    } .neworder{
+        display: flex;
+        background-image: url("order.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        margin: 5px 30px;
+        margin-left: 3px;
+    }.shipped{
+        display: flex;
+        background-image: url(" shipped.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        margin: 5px 5px;
+        margin-left: 3px;
+    } .ship{
+        display: flex;
+        background-image: url(" ship");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        margin: 5px 30px;
+        margin-left: 3px;
+    }.ror{
+        display: flex;
+        background-image: url(" returnorder.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        margin: 5px 30px;
+        margin-left: 3px;
+    }.tr{
+        display: flex;
+        background-image: url(" quality.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        margin: 5px 30px;
+        margin-left: 3px;
+    }.oos{
+        display: flex;
+        background-image: url(" stock.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        margin: 5px 30px;
+        margin-left: 3px;
+    }.stats{
+        display: flex;
+        background-image: url("sales.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 800px;
+        height: 200px;
+        margin: 5px 30px;
+        margin-left: 3px;
+    }
+</style>
+
+<body>
+   
+        <div class="dashboard">
+            <div class="navbar_logo">
+                <div class="logo_1">
+                    <img src="logo.jpg" alt="national_emblem" style="height: 80px;width: 113px;">
+
+                </div>
+                <div class="logo_2">
+
+                </div>
+      <div class="dashboard-cont">
+        <p>DASHBOARD<p>
+      </div>
+
+
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="gov"></div>
+            <div class="modi"></div>
+            <div class="options">
+                <ul>
+                    <li><a href="C:\Users\NAVNEET SAGAR\OneDrive\Desktop\sih\inventory\addproduct.html"C:\Users\NAVNEET SAGAR\OneDrive\Desktop\sih\inventory\addproduct.html">Inventory</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="performance.html">Performance</a></li>
+                    <li><a href="recomendation.html">Recomendation</a></li>
+                    <li><a href="payments.html">Payments</a></li>
+                    <li><a href="ssp.html">Seller Support</a></li>
+                    <li><a href="stats.html">Stats</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+<div class="box1"><p>Balance</p></div>
+<div class="box2">Store Stats
+    <div class="stats"></div>
+</div>
+<div class="box3">Events</div>
+<div class="box4">Order Activity
+<div class="neworder"></div>
+<div class="shipped"></div>
+<div class="ship"></div>
+<div class="ror"></div>
+<div class="tr"></div>
+<div class="oos"></div>
+</div>
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 1500px; /* Add some content to scroll */
+      position: relative;
+    }
+  
+    .chatbot-icon {
+      position: fixed;
+      bottom: 50px;
+      right: 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<button class="chatbot-icon">🤖</button>
+
+
+    </main>
+<footer>
+<p>Copyright</p>
+</footer>
+</body>
+
+</html>

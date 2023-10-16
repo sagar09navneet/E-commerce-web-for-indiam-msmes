@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buyer Registration</title>
+    <style>
+
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(rgb(255, 128, 0), #ffffff, green);
+            margin: 10;
+            padding: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 10px auto;
+            background-color: #ffffff;
+            padding: 100px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .name-input {
+        display: flex;
+        width: 90%;
+        margin-right: 10px;
+    }
+    .name-input input{
+        margin-right:10px;
+    }
+
+    .name-input:last-child {
+        margin-right: 0;
+    }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .country-code-select {
+        width: 100%;
+    }
+
+    .country-code-select option {
+        padding-left: 30px; /* Space for flag */
+        background-repeat: no-repeat;
+        background-size: 24px auto; /* Adjust the flag size */
+        background-position: 5px center; /* Adjust flag position */
+    }
+
+    .country-code-select option[value='+1'] {
+        background-image: url('usa-flag.png'); /* Replace with the URL of the USA flag */
+    }
+
+    .country-code-select option[value='+44'] {
+        background-image: url('uk-flag.png'); /* Replace with the URL of the UK flag */
+    }
+
+    .country-code-select option[value='+33'] {
+        background-image: url('france-flag.png'); /* Replace with the URL of the France flag */
+    }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #928d8d;
+            border-radius: 10px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #7d7878;
+        }
+        .mobile-number-input{
+            margin-bottom: 5px;
+            
+        }
+        #mobile_number{
+            border-radius: 5px;
+        }
+        #country_code{
+            height:21px;
+            border-radius: 5px;
+
+        }
+        #address{
+            min-width: 500px ;
+            min-height: 100px;
+            max-width: 500px ;
+            max-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form autocomplete="on" action="process_buyer_registration.php" method="post" name="Buyer's Registration">
+            <div class="name-input">
+                
+                <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+            
+             
+             
+                <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+            </div>
+        
+            <div>
+               
+                <div class="mobile-number-input">
+                    <select id="country_code" name="country_code">
+                        <option value="+1">+1 (USA)</option>
+                        <option value="+44">+44 (UK)</option>
+                        <option value="+33">+33 (France)</option>
+                        <!-- Add more options for other countries as needed -->
+                    </select>
+                    <input type="tel" id="mobile_number" name="mobile_number" placeholder="Mobile Number" required>
+                </div>
+            </div>
+        
+            
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        
+           
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        
+          
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+        
+       
+            <input type="date" id="birthdate" name="birthdate" placeholder="Date of Birth" required>
+        
+          
+            <textarea id="address" name="address" rows="auto" placeholder="Address" required></textarea>
+        
+            <input type="submit" value="Register">
+        </form>
+        
+        
+        
+
+    </div>
+</body>
+</html>
+
