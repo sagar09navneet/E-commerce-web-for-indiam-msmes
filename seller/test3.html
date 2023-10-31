@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Business Details</title>
+  <style>
+body{
+  background-image: url("./Background\ image.jpg");
+  background-size: cover;
+}
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 88vh;
+    }
+    h1 {
+  color: white;
+  height:50px;
+  width: 1470px;
+  text-align: center;
+ 
+  font-family: sans-serif;
+  
+  margin: 20px;
+}
+    .info {
+      margin-left: 0px;
+      border-radius: 20px;
+    }
+    .registration-form {
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      height: 430px;
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+      font-family: sans-serif;
+      background-color:  #08454c;
+      padding: 60px;
+    }
+    .registration-form .input-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .registration-form .input-group label {
+      flex: 1;
+      margin-right: 10px;
+    }
+    .registration-form input,
+    .registration-form select,
+    .registration-form textarea {
+      border: none;
+      padding: 5px;
+      flex: 2;
+      font-family: sans-serif;
+    }
+    .registration-form input:focus,
+    .registration-form textarea:focus {
+      box-shadow: 3px 3px 10px rgb(228, 228, 228), -3px -3px 10px rgb(224, 224, 224);
+    }
+    
+    .registration-form .submit:hover {
+      box-shadow: 3px 3px 6px rgb(255, 214, 176);
+    }
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
+}
+
+.input-group button {
+  
+  padding: 10px 20px; 
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; 
+  margin: 5px; 
+  flex: 1; 
+}
+
+.registartion-form .previous:hover {
+  box-shadow: 3px 3px 6px rgb(255, 214, 176);
+}
+
+  .input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
+}
+
+.input-group button {
+  
+  padding: 10px 20px; 
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; 
+  margin: 5px; 
+  flex: 1; 
+}
+.registartion-form .submit:hover {
+  box-shadow: 3px 3px 6px rgb(255, 214, 176);
+}
+.registartion-form .previous:hover {
+  box-shadow: 3px 3px 6px rgb(255, 214, 176);
+}
+.input-group button:hover {
+    background-color: #8fc5da; 
+  }
+
+  *{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.wrapper .sidebar{
+    background: #08454c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #08454c;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+.wrapper .sidebar ul li a{
+    top: 130px;
+    margin-top: 10px;
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: black;
+    width: 30px;
+    display: inline-block;
+}
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: white;
+
+    background:  #1194a3;
+    border-right: 2px solid  #1194a3;
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: white;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+  
+</style>
+</head>
+<body>
+  <h1>Documents</h1>
+<div class="all">
+  <div>
+    <div class="wrapper">
+      <div class="sidebar">
+          <div class="profile">
+            <i class="fa fa-user"  style="font-size: 50px; color: #fff; background-color: black;width:60px;height: 60px;border-radius: 50%;text-align: center;" aria-hidden="true"></i>
+              <h3>DAK Ghar Niryat Kendra</h3>
+          </div>
+          <ul>
+              <li>
+                  <a href="./test1.html" >
+                      <span class="icon"><i class="far fa-edit"></i></span>
+                      <span class="item">Seller registration</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="./test2.html">
+                      <span class="icon"><i class="fas fa-address-card"></i></span>
+                      <span class="item">Business Details</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" class="active">
+                      <span class="icon"><i class="far fa-address-card"></i></span>
+                      <span class="item">Documents</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      </div>
+      
+       
+      </div>
+  </div>
+
+  </div>
+  <div class="container">
+    <form name="registration" class="registration-form" onsubmit="return formValidation()">
+      <div class="info">
+        <div class="input-group">
+          <label for="gst">GST Number:</label>
+          <input type="text" name="gst" id="gst" placeholder="Your GST number" required>
+        </div>
+        
+        <div class="input-group">
+          <label for="tan">TAN Number:</label>
+          <input type="text" name="tan" id="tan" placeholder="Your TAN number" required>
+        </div>
+        
+        <div class="input-group">
+          <label for="ifsc">IFSC Code:</label>
+          <input type="text" name="ifsc" id="ifsc" placeholder="Your bank's IFSC code" required>
+        </div>
+        
+        <div class="input-group">
+          <label for="account">Account Number:</label>
+          <input type="text" name="account" id="account" placeholder="Your bank account number" required>
+        </div>
+        
+        <div class="input-group">
+          <label for="paypal">PayPal Email:</label>
+          <input type="email" name="paypal" id="paypal" placeholder="Your PayPal email address" required>
+        </div>
+        <div class="input-group">
+            <button type="button" class="previous"><a href="./test2.html" style="color:black; text-decoration: none;">Previous</a></button>
+            <button type="submit" class="submit">Submit</button>
+          </div>          
+      </div>
+    </form>
+  </div>
+  </div>
+ 
+</body>
+</html>

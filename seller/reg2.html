@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration page</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* header{
+        height:60px;
+width:100vw;
+background-color: orange;
+border: 2px solid white;
+display:flex;
+    } */
+    
+
+    .profile {
+        display: flex;
+        height: 42px;
+        width: 100vw;
+        background-color: rgb(117, 131, 133);
+        color: white;
+        align-items: center;
+        /* border: 2px solid white; */
+        /* border-right: 2px solid white; */
+        /* margin: 2px; */
+    }
+
+    .page {
+        height: 4444px;
+        width: 100vw;
+        background-color: aquamarine;
+    }
+
+    .chatbot {
+        height: 50px;
+        width: 50px;
+        background-color: green;
+        border-radius: 40px;
+        position: relative;
+        top : 20px;
+        left: 60px;
+        /* z-index: */
+        
+    }
+
+    .box1 {
+        height: 200px;
+        width: 20vw;
+        background-color: orange;
+        border: 2px solid black;
+        margin-top: 2px;
+        text-decoration: none; display: flex;
+        position:relative;
+        bottom:135px;
+    }
+    .box2 {
+        height: 200px;
+        width: 20vw;
+        background-color: orange;
+        border: 2px solid black;
+        text-decoration: none; display: flex;
+        position:relative;
+        bottom:135px;
+    }
+
+    .gov {
+        display: flex;
+        /* margin: 5px 5px; */
+        height: 60px;
+        background-image: url("/img/government-of-india.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        left: 10px;
+        bottom:  102px;
+        /* margin-top: 3px; */
+    }
+
+    .modi {
+        width: 50px;
+        height: 60px;
+        background-image: url("img/modi.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        /* margin-top: 3px; */
+        margin: 5px 10px;
+        position: relative;
+        left: 100px;
+        bottom: 167px;
+    }
+    main div a{ display: flex;
+        text-decoration: none;
+        color: black;
+    }
+    main{
+        position: relative;
+    }ul{
+        list-style: none;
+    
+    }.email-id{
+        position: relative;
+        left: 600px;
+        bottom: 100px;
+        padding: 20px 20px;
+    }.city{
+        position: relative;
+        bottom: 80px;
+    }.state{
+        position: relative;
+        bottom: 170px;
+        left: 624px;
+    }.pincode{
+        position: relative;
+        bottom: 110px;
+    }.card{position: relative;
+        left: 600px;
+        bottom: 215px;
+        padding: 20px 20px;
+ }.big-box{
+        height: 600px;
+        width: 900px;
+        border: 2px solid black;
+        background-color: rgb(198, 211, 212);
+        position: relative;
+        bottom: 745px;
+        left: 450px;
+        padding: 10px 20px;
+      
+    } .search{
+    display:flex;
+    align-items: center;
+   padding: 20px 20px;
+    font-size: large;
+}.btn{
+position: relative;
+bottom: 115px;
+left:400px;
+padding: 5px 10px;
+border: 2px solid black;
+font-weight: 900;
+}
+.dropdown {
+  position: relative;
+  display: flex;
+}
+
+.dropdown-content {
+  display: flex;
+  /* position: absolute; */
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+<body>
+    <header>
+        
+        <div class="profile">SELLER ACCOUNT REGISTERATION</div>
+        <div class="gov"></div>
+        <div class="modi"></div>
+
+    </header>
+    <main>
+        <!-- <div class="page"></div> -->
+        <div class="chatbot"></div>
+        <div class="box1 flex-center">
+            <a href="reg3.html">Seller Verfication</a>
+        </div>
+        <div class="box2 flex-center">
+            <a href="reg4.html">Organisation Details</a>
+        </div>
+        <div class="box2 flex-center">
+            <a href="doc.html">Documents</a>
+        </div>
+    </div>
+    <div class="big-box"><ul>
+            <li>
+                Name
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="Enter your Name">
+                </div>
+            </li>
+            <li class="email-id"> Email-id
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="@gmail.com">
+                </div>
+            </li>
+            <li class="city"> City
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="Choose City">
+                </div>
+            </li>
+            <li class="state"> State
+                <div class="dropdown">
+                    <div class="dropdown-content"><ul>
+                        <li> Maharashtra</li>
+                        <li> Punjab</li>
+                        <li> Gujrat</li>
+                        <li> Tamil Nadu</li>
+                        <li> Rajasthan</li>
+                    </ul></div>
+                </div>
+            </li>
+            <li class="pincode"> Pincode
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="Enter pincode">
+                </div>
+            </li>
+            
+            <li class="card"> Aadhar card
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="Enter email-id">
+                </div>
+            </li>
+        </ul>
+<button class="btn">
+    <a href="reg4.html">NEXT</a> 
+</button>
+
+</div>
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 1500px; /* Add some content to scroll */
+      position: relative;
+    }
+  
+    .chatbot-icon {
+      position: fixed;
+      bottom: 50px;
+      right: 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<button class="chatbot-icon">🤖</button>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

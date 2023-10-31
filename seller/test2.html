@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+</head>
+<style>
+body{
+  background-image: url("./Background\ image.jpg");
+  background-size: cover;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 88vh;
+}
+
+ h1 {
+  color: white;
+  height:50px;
+  width: 1470px;
+  text-align: center;
+ 
+  font-family: sans-serif;
+  
+  margin: 20px;
+}
+.info{
+    margin-left: 0px;
+    border-radius: 20px;
+}
+
+.registartion-form {
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 430px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color:  #08454c ;
+  padding: 20px;
+  flex-direction: column;
+  
+}
+
+.registartion-form input,
+.registartion-form select,
+.registartion-form textarea {
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+.registartion-form input:focus,
+.registartion-form textarea:focus {
+  box-shadow: 3px 3px 10px rgb(141, 57, 57), -3px -3px 10px rgb(224, 224, 224);
+}
+
+.input-group {
+  width:70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
+}
+
+.input-group button {
+  
+  padding: 10px 20px; 
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; 
+  margin: 5px; 
+  flex: 1; 
+}
+
+.registartion-form .previous:hover {
+  box-shadow: 3px 3px 6px rgb(255, 214, 176);
+}
+.input-group button:hover {
+    background-color: #8fc5da; 
+  }
+
+.registartion-form .submit:hover {
+  box-shadow: 3px 3px 6px rgb(255, 214, 176);
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.wrapper .sidebar{
+    background: #08454c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #08454c;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+.wrapper .sidebar ul li a{
+    top: 130px;
+    margin-top: 10px;
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: black;
+    width: 30px;
+    display: inline-block;
+}
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: white;
+
+    background:  #1194a3;
+    border-right: 2px solid  #1194a3;
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: white;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+</style>
+<body>
+    <h1>Business Details</h1>
+  <div class="container">
+    <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+    <div class="info">
+      <table>
+        <tr>
+          <td><label for="name"> Business Name:</label></td>
+          <td><input type="text" name="name" id="name" placeholder="your name"></td>
+        </tr>
+        <tr>
+          <td><label for="address">Business Address:</label></td>
+          <td><input type="text" name="address" id="address" placeholder="Enter Address"></td>
+        </tr>
+        <tr>
+          <td><label for="type">Business-Type:</label></td>
+          <td>
+            <select name="type" id="">
+              <option value="">Select Type</option>
+              <option value="text">sole proprietorship</option>
+              <option value="text">LLC</option>
+              <option value="text">corporation</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="number">Tax identification Number:  </label></td>
+          <td><input type="number" name="number" id="number" placeholder="number"></td>
+        </tr>
+        <tr>
+            <td><label for="City">City:</label></td>
+            <td><input type="text" name="text" id="text"></td>
+          </tr>
+          <tr>
+            <td><label for="Pin-code:">Pin-code:</label></td>
+            <td><input type="number" name= "Pin-code:" id="Pin-code:"></td>
+          </tr>
+      </table>
+    </div>
+  
+        <div class="input-group">
+          <button type="button" class="previous"><a href="./test1.html"  style="color:black; text-decoration: none;">Previous</a></button>
+          <button type="submit" class="submit"><a href="./test3.html" style="color:black; text-decoration: none;">Next</a></button>
+        </div>
+  
+    </form>
+    <div class="wrapper">
+      <div class="sidebar">
+          <div class="profile">
+            <i class="fa fa-user"  style="font-size: 50px; color: #fff; background-color: black;width:60px;height: 60px;border-radius: 50%;text-align: center;" aria-hidden="true"></i>
+              <h3>DAK Ghar Niryat Kendra</h3>
+          </div>
+          <ul>
+              <li>
+                  <a href="./test1.html" >
+                      <span class="icon"><i class="far fa-edit"></i></span>
+                      <span class="item">Seller registration</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" class="active">
+                      <span class="icon"><i class="fas fa-address-card"></i></span>
+                      <span class="item">Business Details</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="./test3.html">
+                      <span class="icon"><i class="far fa-address-card"></i></span>
+                      <span class="item">Documents</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      </div>
+      
+       
+      </div>
+  </div>
+  </div>
+</body>
+</html>
