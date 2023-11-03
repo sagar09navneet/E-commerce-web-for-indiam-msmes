@@ -19,7 +19,7 @@ let slideIndex = 0;
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active-dot";
 
-            setTimeout(showSlides, 2000); // Change slide every 2 seconds (adjust as needed)
+            setTimeout(showSlides, 4000); // Change slide every 2 seconds (adjust as needed)
         }
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
@@ -34,3 +34,6 @@ let slideIndex = 0;
               }
             }
           }
+    document.getElementById("feature-link").addEventListener("click", function() {
+        document.getElementById("google_translate_element").scrollIntoView({ behavior: "smooth" });
+    });

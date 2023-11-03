@@ -3,15 +3,17 @@
     border-radius: 4px;
     border:border-box;
     font:arial;
+    
 
 }
+
 .upper_navbar{
     height:100px;
     width:100%;
-    background-color: #e4740b;
+    background-color: #0b5e67;
     display:flex;
     justify-content: space-evenly;
-    
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.1) , 0px 1px 2px 0px rgba(0,0,0,0.06) ;
     
 }
 .navbar_logo{
@@ -66,12 +68,12 @@
     border: 2px solid transparent;
 }
 .border:hover{
-    border: 1.5px solid white;
+    border: 0.5px solid white;
 }
 .nav-search{
     display:flex;
     height:50px;
-    border-radius: 4px;
+    border-radius: 40px;
     background-color: white;
     width:700px;
     margin-top:20px;
@@ -80,11 +82,10 @@
     align-items: center;
     height: 50px;
     width:60px;
-    background-color:white ;
-    color:#0f1111;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border:none;
+    background-color:#0b5e67 ;
+    color:#fff;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
     font-size:1rem
 }
 .search-input{
@@ -97,63 +98,67 @@
     display:flex;
     width:50px;
     height:50px;
-    color:black;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    color: #fff;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
     
     justify-content: center;
     align-items: center;
-    background-color: #e6900e;
+    background-color: #0b5e67;
     
 }
 .nav-language-chng{ 
     margin-left:10px;
     margin-top:20px;
-    width:50px;
-    height:50px;
+    width:80px;
+    height:70px;
     margin-bottom: 30px;
   
    
 
 }
 .language-chng{
-    font-size: xx-large;
+    font-size: 60px;
     width:70px;
     height:50px;
-   
+
     color: white;
     display:flex;
     justify-content: center;
     align-items: center;
 
 }
+.language-chng :active{
+    transform: translateY(2px);
+
+}
 .nav-content{
     margin-left:10px;
     margin-top:20px;
-    width:50px;
-    height:50px;
+    width:60px;
+    height:70px;
     margin-bottom: 30px;
    
-    
     
 }
 .menu-icon{
     font-size: xx-large;
-   margin-left:10px;
     text-align: center;
     
 }
-.nav-content .dropbtn {
+.nav-content .dropbtn  {
     cursor: pointer;
-    font-size: 1.5rem;  
-    border:#e6900e;
-    outline:blue;
+    font-size: 40px;  
+    border:#10558d;
     color: white;
-    padding: 14px 16px;
-    background-color: inherit;
+    display: inline-block;
+    background-color: transparent;
     font-family: inherit;
-    margin: 0;
     text-align: center;
+  }
+  .nav-content .dropbtn :active{
+    
+    transform: translateY(2px);
   }
 .dropdown-content {
     display: none;
@@ -190,7 +195,7 @@
      
 }
 .add-firstcontent2{
-    font-size:1rem;
+    font-size:1.1vw;
     color: #ffffff;
     height:17px;
     width:70px;
@@ -198,53 +203,54 @@
     margin-top: 10px;
 }
 .add-seccontent2{
-    font-size:1.5rem;
+    font-size:1.1vw;
     height:23px;
     width:70px;
     color:#ffffff;
 }
+
 .kart-box{
     height:70px;
-    width:80px;
-    display:flex;
-    margin-top:10px;
-    
+    width:70px;
+    display:inline-block;
+    margin-top:24px;
+    margin-left: 10px;
 }
 .icon2{
-    width:70px;
-    height:60px;
-    margin-top: 10px;
+    width:60px;
+    margin-bottom: 6px;
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 0;
     color:#ffffff;
     font-size:xx-large;
 
 }
 .kart-content{
-    font-size: 1.5rem;
+    font-size: 1.1vw;
     color:#ffffff;
-    margin-top: 30px;
-    width:28px;
-    height:15px;
-    margin-right: 45px;
-
+    margin-left: 0;
+    text-align: center;
+    
 }
 .profile-img{
     height:70px;
     width:80px;
     display:flex;
-    margin-top:10px;
+    margin-top:24px;
     
 }
 
 .icon3{
-     width:70px;
-    height:60px;
-    margin-top: 15px;
+     width:40px;
+    height:40px;
+    margin-top: 10px;
     color:#ffffff;
     font-size: xx-large;
 
 }
 .profile-content{
-    font-size: 1rem;
+    font-size: 1.1vw;
     color:#ffffff;
    margin-top: 15px;
     width:28px;
@@ -258,11 +264,11 @@
 .lower_navbar{
     height:40px;
     width:100%;
-    background-color: #dcdced;
-  
-    
+    background-color: #fff;
+    border-radius: black solid 20px;  
     display: flex;
-    
+    box-shadow: 0px 1px 3px 5px rgba(0,0,0,0.5) , 0px 1px 2px 5px rgba(0,0,0,0.5) ;
+
     
     
 }
@@ -270,15 +276,19 @@ nav ul {
     list-style: none; 
     margin: 0; 
     padding: 0; 
+    justify-content: center;
     
   } 
    
   nav ul li { 
     display: inline-block; 
+    text-align: center;
+    color: #222;
   } 
    
   nav ul li a { 
     display: block; 
+    justify-content: center;
     padding: 10px 20px; /* adjust padding as needed */ 
     text-decoration: none; 
   } 
@@ -287,15 +297,17 @@ nav ul {
     margin-left: 10px; /* adjust margin as needed */ 
   } 
 .landingpage{
-    background-color: #FFFFFF;
-    ;
+    background-color: whitesmoke;
+    
     height:1500px;
     width:100%;
   
 }
 .slideshow-container {
     position: relative;
-    max-width: 80%; /* Set the maximum width to 60% of the webpage */
+    text-align: center;
+    width: 100vw;
+    height: 100%;
     margin: 0 auto; /* Center the slideshow horizontally */
     overflow: hidden;
 }
@@ -308,10 +320,9 @@ nav ul {
 }
 
 /* Style for the images within the slides */
-.slide img {
-    width: 100%; /* Make sure the images fill the entire slide */
-    height: 100%; /* Make sure the images fill the entire slide */
-    object-fit: cover; /* Crop and center the image within the slide */
+.img{
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: 100%; /* Maintain the image's aspect ratio */
 }
 
 /* Style for the navigation dots */
@@ -331,7 +342,7 @@ nav ul {
 }
 
 .active-dot {
-    background-color: #717171;
+    background-color: #0c0c0c;
 }
 .main_page{
     display:flex;
@@ -364,5 +375,13 @@ nav ul {
     font-size: 1rem;
     margin-left: 30px;
     font-weight: bolder;
+
+}
+.goog-te-combo {
+    width: 250px;
+    height: 30px;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
 
 }
